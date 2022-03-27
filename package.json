@@ -1,5 +1,6 @@
 {
   "name": "learn-nestjs",
+  "packageManager": "yarn@3.2.0",
   "version": "0.0.1",
   "description": "",
   "author": "",
