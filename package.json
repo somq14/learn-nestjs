@@ -9,7 +9,7 @@
     "format": "prettier --ignore-unknown --write '**/*'",
     "lint": "eslint --max-warnings 0 '**/*.{js,ts}'",
     "test": "jest",
-    "postinstall": "husky install"
+    "husky-install": "husky install"
   },
   "dependencies": {
     "@nestjs/common": "8.4.3",
