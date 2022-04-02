@@ -1,0 +1,22 @@
+name: deploy-on-merge
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+env:
+  HEROKU_APP_NAME: somq14-learn-nestjs
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: ${{ env.HEROKU_APP_NAME }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          usedocker: true
