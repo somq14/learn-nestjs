@@ -1,0 +1,66 @@
+name: check-on-push
+
+on: push
+
+jobs:
+  install-dependencies:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          cache: "yarn"
+      - run: yarn install
+
+  format:
+    runs-on: ubuntu-20.04
+    needs:
+      - install-dependencies
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          cache: "yarn"
+      - run: yarn install
+      - run: yarn prettier --ignore-unknown --check '**/*'
+
+  lint:
+    runs-on: ubuntu-20.04
+    needs:
+      - install-dependencies
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          cache: "yarn"
+      - run: yarn install
+      - run: yarn eslint --max-warnings 0 '**/*.{js,ts}'
+
+  type-check:
+    runs-on: ubuntu-20.04
+    needs:
+      - install-dependencies
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          cache: "yarn"
+      - run: yarn install
+      - run: yarn tsc --noEmit
+
+  test:
+    runs-on: ubuntu-20.04
+    needs:
+      - install-dependencies
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          cache: "yarn"
+      - run: yarn install
+      - run: yarn jest
