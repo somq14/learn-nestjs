@@ -7,6 +7,7 @@
     ":prHourlyLimitNone",
     ":maintainLockFilesWeekly"
   ],
+  "baseBranches": ["develop"],
   "commitMessagePrefix": "⬆️ ",
   "packageRules": [
     {
