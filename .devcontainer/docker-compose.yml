@@ -18,3 +18,8 @@ services:
       - ~/.aws:/home/vscode/.aws
       # シェルの履歴等を残すために永続化用のディレクトリにボリュームを割り当てる
       - /home/vscode/.persistent
+
+  dynamodb:
+    image: amazon/dynamodb-local
+    ports:
+      - 8000
