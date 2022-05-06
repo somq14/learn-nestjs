@@ -24,7 +24,7 @@
     "@nestjs/cli": "8.2.5",
     "@nestjs/testing": "8.4.4",
     "@somq14/eslint-config": "somq14/eslint-config#v0.3.5",
-    "@types/jest": "27.4.1",
+    "@types/jest": "27.5.0",
     "@types/supertest": "2.0.12",
     "eslint": "8.14.0",
     "husky": "7.0.4",
