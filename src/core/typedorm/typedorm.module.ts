@@ -39,5 +39,6 @@ const entities = [UserEntity];
     },
   ],
   imports: [ConfigModule],
+  exports: [Connection],
 })
 export class TypedormModule {}
