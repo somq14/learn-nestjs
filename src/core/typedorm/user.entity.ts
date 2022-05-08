@@ -11,4 +11,7 @@ import { Attribute, Entity } from "@typedorm/common";
 export class UserEntity {
   @Attribute()
   userId!: string;
+
+  @Attribute()
+  userName!: string;
 }
