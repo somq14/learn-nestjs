@@ -8,7 +8,7 @@
     "start": "nest start",
     "format": "prettier --ignore-unknown --write '**/*'",
     "lint": "eslint --max-warnings 0 '**/*.{js,ts}'",
-    "test": "jest",
+    "test": "dotenv -e ./config/local.env jest",
     "husky-install": "husky install",
     "db:migrate": "dotenv -e ./config/local.env ts-node ./scripts/migrate.ts",
     "db:gui": "dotenv -e ./config/local.env dynamodb-admin"
@@ -17,6 +17,8 @@
     "@nestjs/common": "8.4.5",
     "@nestjs/core": "8.4.5",
     "@nestjs/platform-express": "8.4.5",
+    "@typedorm/common": "1.14.11",
+    "@typedorm/core": "1.14.11",
     "aws-sdk": "2.1125.0",
     "dotenv": "16.0.0",
     "reflect-metadata": "0.1.13",
