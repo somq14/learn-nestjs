@@ -15,6 +15,10 @@
     "baseUrl": "./",
     "module": "commonjs",
     "moduleResolution": "node",
+    "paths": {
+      "@libs/core": ["libs/core/src"],
+      "@libs/core/*": ["libs/core/src/*"]
+    },
 
     /*
      * Emit

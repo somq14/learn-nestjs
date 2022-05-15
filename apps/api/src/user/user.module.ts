@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
 
-import { TypedormModule } from "../core/typedorm";
-
 import { UserController } from "./user.controller";
+
+import { TypedormModule } from "@libs/core/typedorm";
 
 @Module({
   controllers: [UserController],

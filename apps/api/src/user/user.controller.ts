@@ -7,9 +7,9 @@ import {
 } from "@nestjs/common";
 import { Connection } from "@typedorm/core";
 
-import { UserEntity } from "../core/typedorm";
-
 import { GetUserParam, GetUserResponse } from "./user.resource";
+
+import { UserEntity } from "@libs/core/typedorm";
 
 @Controller("/users")
 export class UserController {
