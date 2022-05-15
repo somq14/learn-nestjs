@@ -12,6 +12,7 @@
     /*
      * Modules
      */
+    "baseUrl": "./",
     "module": "commonjs",
     "moduleResolution": "node",
 
