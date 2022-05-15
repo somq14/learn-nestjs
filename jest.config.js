@@ -1,8 +1,8 @@
 module.exports = {
   // TypeScript は ts-jest でトランスパイルする
   transform: { "^.+\\.ts$": "ts-jest" },
-  // src からテストファイルを検索
-  roots: ["<rootDir>/src"],
+  // apps からテストファイルを検索
+  roots: ["<rootDir>/apps"],
   // テストがないファイルも含めてカバレッジを取得する
-  collectCoverageFrom: ["<rootDir>/src/**/*.ts"],
+  collectCoverageFrom: ["<rootDir>/apps/**/*.ts"],
 };
