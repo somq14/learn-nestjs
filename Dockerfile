@@ -1,4 +1,4 @@
-FROM node:14.19.3-alpine3.15 as builder
+FROM node:14.20.0-alpine3.15 as builder
 WORKDIR /work
 
 COPY .yarn/plugins .yarn/plugins
@@ -13,7 +13,7 @@ RUN yarn build
 RUN yarn workspaces focus --production
 
 
-FROM node:14.19.3-alpine3.15 as app
+FROM node:14.20.0-alpine3.15 as app
 WORKDIR /work
 
 COPY --from=builder /work/dist .
