@@ -20,7 +20,7 @@
     "@typedorm/common": "1.14.11",
     "@typedorm/core": "1.14.11",
     "aws-sdk": "2.1176.0",
-    "dotenv": "16.0.1",
+    "dotenv": "16.0.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "7.5.6",
     "source-map-support": "0.5.21",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@nestjs/cli": "9.0.0",
-    "@nestjs/schematics": "9.0.1",
+    "@nestjs/schematics": "9.0.2",
     "@nestjs/testing": "9.0.11",
     "@somq14/eslint-config": "somq14/eslint-config#v1.0.0",
     "@types/jest": "28.1.8",
