@@ -968,9 +968,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/schematics@npm:9.0.2":
-  version: 9.0.2
-  resolution: "@nestjs/schematics@npm:9.0.2"
+"@nestjs/schematics@npm:9.0.3":
+  version: 9.0.3
+  resolution: "@nestjs/schematics@npm:9.0.3"
   dependencies:
     "@angular-devkit/core": 14.2.1
     "@angular-devkit/schematics": 14.2.1
@@ -979,7 +979,7 @@ __metadata:
     pluralize: 8.0.0
   peerDependencies:
     typescript: ^4.3.5
-  checksum: 2b324cd590de14e101b21e14e889fee37eba7a9920fcce1acac4597af54b0789fbbd90c1189b401ce6898d0d1b8ad4301ac73d92c263c5ac8a9657c4db06e819
+  checksum: 8439f211f1df75e60092a730d62cfeb22b9d51c864a2740ca8723a5e64284fe63375152b430f4c7d7f54d6f6deedea905d4769f864fe64fa0ce90ea1f4683fbe
   languageName: node
   linkType: hard
 
@@ -5585,7 +5585,7 @@ __metadata:
     "@nestjs/common": 9.0.11
     "@nestjs/core": 9.0.11
     "@nestjs/platform-express": 9.0.11
-    "@nestjs/schematics": 9.0.2
+    "@nestjs/schematics": 9.0.3
     "@nestjs/testing": 9.0.11
     "@somq14/eslint-config": "somq14/eslint-config#v1.0.0"
     "@typedorm/common": 1.14.11
