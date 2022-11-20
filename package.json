@@ -18,7 +18,7 @@
     "@nestjs/core": "9.0.11",
     "@nestjs/platform-express": "9.0.11",
     "@typedorm/common": "1.14.11",
-    "@typedorm/core": "1.14.11",
+    "@typedorm/core": "1.15.2",
     "aws-sdk": "2.1176.0",
     "dotenv": "16.0.2",
     "reflect-metadata": "0.1.13",
