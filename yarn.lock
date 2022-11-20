@@ -2045,7 +2045,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.1176.0, aws-sdk@npm:^2.851.0":
+"aws-sdk@npm:2.1258.0":
+  version: 2.1258.0
+  resolution: "aws-sdk@npm:2.1258.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    util: ^0.12.4
+    uuid: 8.0.0
+    xml2js: 0.4.19
+  checksum: 9577750cb67f9538fcbc0bcc5e354dda519e68fffc3c97499d3fa280b4f8956df5178b49556c5c4ced6cae86641f7599aa7c4682ac29b167d1473f91e05b6b16
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.851.0":
   version: 2.1176.0
   resolution: "aws-sdk@npm:2.1176.0"
   dependencies:
@@ -5593,7 +5611,7 @@ __metadata:
     "@types/jest": 28.1.8
     "@types/node": 17.0.31
     "@types/supertest": 2.0.12
-    aws-sdk: 2.1176.0
+    aws-sdk: 2.1258.0
     dotenv: 16.0.2
     dotenv-cli: 6.0.0
     dynamodb-admin: 4.4.0
